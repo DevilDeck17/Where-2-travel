@@ -1,0 +1,168 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Ms Madi', cursive; */
+    
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)) , url('taj.jpg');
+    
+    /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)) , url('taj.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    height: 15vh;
+    width: 100%;
+    display: flex;    
+    background-color: rgb(0, 0, 0,0.3);
+    text-align: center;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+nav .logo{
+    width: 30%;
+    font-weight: bold;
+    font-size: 25px;
+    justify-content: center;
+    text-align:  center;
+}
+
+nav .logo h1{
+    text-transform:uppercase;
+}
+
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    /* margin-right: 25% ; */
+font-family: 'Oswald', sans-serif;
+
+}
+
+nav li{
+
+    list-style: none;
+}
+
+
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    /* width: 25%; */
+    /* margin-right: 60px; */
+    color: white;
+    padding: 20px ;
+    letter-spacing: 2px;
+}
+
+main{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+} 
+
+.container{
+    color: white;
+    text-align: center;
+}
+
+main .container h2{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+     text-shadow: 1px 2px 5px black;
+}
+
+main .container h3{
+    font-size: 55px;
+    font-weight: 600;
+    /* letter-spacing: 2px; */
+    word-spacing: 5px;
+     text-shadow: 1px 2px 5px black;
+    
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    
+}
+
+.button a{
+    /* padding: 15px  20px ; */
+    /* outline: none; */
+        text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px; 
+    margin-top: 20px;   
+}
+.button .btn1{
+    background-color: #fff;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.btn1:hover{
+    background-color: #00b894;
+    transition: 0.5s ease;
+}
+
+.button .btn2{
+    background-color: #00b894;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 4px;
+    margin-left: 10px;
+    width: 200px;
+
+}
+
+.btn2:hover{
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.change::after{
+    content: '';
+    color: #00b894;
+    animation: changetext 15s linear infinite;
+}
+
+
+@keyframes changetext{
+    0%{content: " Agra ";}
+    9%{content: " Jaipur ";}
+    18%{content: " Darjeeling ";}
+    27%{content: " Mumbai ";}
+    36%{content: " Shimla ";}
+    45%{content: " Rishikesh ";}
+    54%{content: " Varanasi ";}
+    63%{content: " Amritsar ";}
+    72%{content: " Ajanta and Ellora Caves";}
+    81%{content: " Manali ";}
+    90%{content: " Ladakh ";}
+}
+
+
+
